@@ -86,7 +86,7 @@ jobs:
   push-docker-image:
     runs-on: ${{ inputs.runs-on }}
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: ${{ inputs.cache-key }}
           path: ./
